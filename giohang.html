@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        img{
+            width: 60%;
+            vertical-align: middle;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="nav-list">
+          <a href="trangchu.html"><li class="nav-item">Trang chủ</li></a>
+          <a style="color: white" href="#"><li class="nav-item">Sản phẩm <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="item_child">
+              <li><a href="spapple.html">Apple</a></li>
+              <li><a href="spsamsung.html">Samsung</a></li>
+              <li><a href="spvivo.html">Vivo</a></li>
+              <li><a href="spoppo.html">Oppo</a></li>
+            </ul>
+          </li>
+          <a href="gioithieu.html"><li class="nav-item">Giới thiệu</li></a>
+            
+            
+        </ul>
+        <div class="nav-list">
+          <div class="nav-item"> <input type="text" placeholder="Bạn đang tìm gì?"></div>
+          <div class="nav-item"> 
+            <a style="color: white;" href="giohang.html"><i style="font-size: 18px;" class="fas fa-shopping-cart"></i></a>
+          </div>  
+        </div>
+        <ul class="nav-list">
+            <a href="formdk.html"><li class="nav-item">Đăng ký</li></a>
+            <a href="formdk.html"><li class="nav-item">Đăng nhập</li></a>
+        </ul>
+      </div>
+
+   
+
+    <main role="main">
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <h1 class="text-center">Giỏ hàng</h1>
+            <div class="row">
+                <div class="col col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 205px;">Ảnh đại diện</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Thành tiền</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datarow">
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="ip13promax.jpg" class="hinhdaidien">
+                                </td>
+                                <td>IPHONE 13 PRO 128GB SIERRA BLUE</td>
+                                <td class="text-right">2</td>
+                                <td class="text-right">26,090,000</td>
+                                <td class="text-right">52,180,000</td>
+                                <td>
+
+                                    <a id="delete-1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <img src="Samsung-Galaxy-A13-cam-thumb-600x600.jpg" class="hinhdaidien">
+                                </td>
+                                <td>SAMSUNG GALAXY A13 4G</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">3,890,000</td>
+                                <td class="text-right">3,890,000</td>
+                                <td>
+                                    <a id="delete-2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <img src="oppo-reno6-5g-black-600x600.jpg" class="hinhdaidien">
+                                </td>
+                                <td>OPPO RENO 6 5G</td>
+                                <td class="text-right">3</td>
+                                <td class="text-right">10,050,000</td>
+                                <td class="text-right">30,150,000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete-3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="trangchu.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left"
+                            aria-hidden="true"></i>&nbsp;Quay
+                        về trang chủ</a>
+                    <a href="#" class="btn btn-primary btn-md"><i
+                            class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <br><br>
+    <footer  style="padding-top: 10px;" class="main-footer">
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-block">
+                  <h4 class="footer-title">
+                    Giới thiệu
+                  </h4>
+                  <div class="footer-content">
+                    <p>Di Động Việt Nam là hệ thống kinh doanh nhượng quyền bán lẻ Smartphone chính hãng là đối tác của các hãng điện thoại chính hãng lớn tại Việt Nam như: Apple, Samsung, Oppo, Vivo,…</p>
+                    <div class="logo-footer">
+                      <img width="150px" src="logo-bct.png" alt="Bộ Công Thương">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-link">
+                  <h4 style="position: relative; left: 20px;" class="footer-title">
+                    PHÁP LÝ &amp; CÂU HỎI
+                  </h4>
+                  <div class="footer-content toggle-footer">
+                    <ul>
+                      <li class="item">
+                        <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Giới thiệu">Giới thiệu</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                      </li>
+                      <li class="item">
+                        <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="footer-col footer-block">
+                  <h4 style="position: relative; left: 20px;" class="footer-title">
+                    Thông tin liên hệ
+                  </h4>
+                  <div class="footer-content toggle-footer">
+                    <ul>
+                      <li><span>Địa chỉ:</span> 536 Âu Cơ, Phường 10, Quận Tân Bình, TP. Hồ Chí Minh, Vietnam</li>
+                      <li><span>Điện thoại:</span>0397955158</li>
+                      <li><span>Fax:</span>0344970601</li>
+                      <li><span>Mail:</span> contact@ddvn.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3">
+                <div style="position: relative; left: 40px" class="footer-col footer-block">
+                  <h4 class="footer-title">
+                    FANPAGE
+                    <br>
+                    <a style="font-size: smaller; text-decoration: none;" href="#">Didong Việt Nam</a>
+                  </h4>
+                  <div class="social-list">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-google"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                    <a href="#" class="fab fa-skype"></a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="main-footer--copyright">
+          <div>
+            <hr>
+            <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+              <p>Copyright © 2019 <a target="_blank"
+                  href="#">Powered by Didong</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>

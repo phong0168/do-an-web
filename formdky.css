@@ -1,0 +1,123 @@
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    padding-top: 20px;
+}
+#dn {
+    width: 300px;
+    padding: 0px 35px 25px;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: relative;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border: 1px solid white;
+    justify-content: center;
+    left: 34%;
+}
+
+#dn .header {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#dn .header h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dn .header p {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#dn .sep {
+    height: 1px;
+    background: #e8e8e8;
+    width: 406px;
+    margin: 0px -25px;
+}
+
+#dn .inputs {
+    margin-top: 25px;
+    position: relative;
+    left: 14px;
+   
+    
+}
+
+#dn .inputs label {
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+ 
+    
+}
+
+
+
+#dn .inputs input[type=email], input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    
+    clear: both;
+}
+
+
+
+#dn .inputs .checkboxy {
+    display: block;
+    position: static;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+    margin-bottom: 10px;
+}
+#dn .inputs input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+
+#dn .inputs label.terms {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+button{
+    position: relative;
+    left: 1%;
+    padding: 10px 150px;
+    color: white;
+    background-color: #409eff;
+    border-color: #409eff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+button:hover{
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #fff;
+}
+
+
